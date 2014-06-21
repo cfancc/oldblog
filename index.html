@@ -3,7 +3,7 @@ layout: default
 title: 我的博客
 ---
 <h2>{{ page.title }}</h2>
-<p>latest articles</p>
+<p>最近文章：</p>
 <ul>
 	{% for post in site.posts %}
 	<li>{{ post.date | date_to_string }} <a href="{{ post.url }}">{{ post.title }}</a></li>
