@@ -1,5 +1,5 @@
 markdown: rdiscount
-pygments: true
+highlighter: pygments
 author: "阳光技术宅"
 name: "Footsteps"
 atom-baseurl: "http://cfanlife.tk"
