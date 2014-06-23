@@ -1,2 +1,5 @@
-baseurl: /
-encoding: UTF-8
+markdown: rdiscount
+pygments: true
+author: "阳光技术宅"
+name: "Footsteps"
+atom-baseurl: "http://cfanlife.tk"
