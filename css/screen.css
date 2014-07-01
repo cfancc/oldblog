@@ -203,12 +203,7 @@ ul.posts {
 	padding: .2em .9em;
   }
 
-  #post ul li {
-	margin: 15px 0;
-	font-size: smaller;
-	color: #333;
-  },
-  #post ol {
+  #post ol,li {
     margin-left: 20px;
   }
 
