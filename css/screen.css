@@ -74,6 +74,7 @@ ul.posts {
 
   ul.posts li {
     line-height: 26px;
+	
   }
 
   ul.posts span {
@@ -202,7 +203,11 @@ ul.posts {
 	padding: .2em .9em;
   }
 
-  #post ul,
+  #post ul li {
+	margin: 15px 0;
+	font-size: smaller;
+	color: #333;
+  },
   #post ol {
     margin-left: 20px;
   }
