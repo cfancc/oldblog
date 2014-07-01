@@ -3,6 +3,7 @@ layout: post
 title: JavaScript学习
 ---
 ## JavaScript创建对象的几种方法
+---
 1. 直接对象初始化器`{}`来创建:  
 
 		var person = {
