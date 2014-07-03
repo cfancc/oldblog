@@ -21,7 +21,7 @@ html, body {
 body {
 	background-color: rgb(174, 196, 90);
 	opacity: 0.9;
-	font: 13.34px helvetica, arial, clean, sans-serif;
+	font: 13px helvetica, arial, clean, sans-serif;
 	font-size: small;
 	text-align: center;
 	border: 5px dashed #FFFFFF;
@@ -189,8 +189,8 @@ ul.posts {
 /*
 /*****************************************************************************/
 
-#post {
-
+#post h2{
+    margin-top: 15px;
 }
 
   /* standard */
