@@ -2,8 +2,10 @@
 layout: post
 title: JavaScript学习笔记
 ---
-## JavaScript创建对象的几种方法
+#JavaScript学习笔记
 ---
+## JavaScript创建对象的几种方法
+
 * 直接对象初始化器`{}`来创建:  
 
 		var person = {
