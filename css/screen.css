@@ -188,11 +188,12 @@ ul.posts {
 /* Posts
 /*
 /*****************************************************************************/
-
+#post h1{
+    font-size: large;
+}
 #post h2{
     margin-top: 15px;
 }
-
   /* standard */
 
   #post pre {
