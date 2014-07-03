@@ -29,13 +29,10 @@ title: JavaScript学习笔记
 				this.name = name;
 				this.age = age
 			}
-
 ##JavaScript原型(prototype)对象
 * 原型是用来跟踪一个类的变化的对象
-
-	举个例子:
-	
-	如果创建了一个`Student`类:
+举个例子:
+如果创建了一个`Student`类:
 	
 		function Student(name,age){
 			this.name = name;
@@ -50,7 +47,6 @@ title: JavaScript学习笔记
 		Student.prototype.carrer = 'student';
 	这样在之后所有`student`创建的对象中,都存在一个`carrer`属性,并且值为`student`.
 * 原型链在继承中的应用
-
 	JS语言中的继承,是利用原型的方式进行实现了,因为继承关系可以表现为`父-子-孙...`的链接方式,相应的就有了原型链(`prototype chain`)的概念.
 
 		//定义一个Person类
