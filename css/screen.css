@@ -19,6 +19,7 @@ html, body {
 }
 
 body {
+	background-color: rgb(174, 196, 90);
 	opacity: 0.9;
 	font: 13.34px helvetica, arial, clean, sans-serif;
 	font-size: small;
