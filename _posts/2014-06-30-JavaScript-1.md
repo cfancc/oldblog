@@ -4,14 +4,14 @@ title: JavaScript学习笔记
 ---
 ## JavaScript创建对象的几种方法
 ---
-1. 直接对象初始化器`{}`来创建:  
+* 直接对象初始化器`{}`来创建:  
 
 		var person = {
 			name:"CC",
 			age:24
 			};
 
-2. 采用构造函数
+* 采用构造函数
 	- 采用系统自带的`Object()`构造函数:
 
 			var person = new Object();
@@ -29,6 +29,7 @@ title: JavaScript学习笔记
 				this.name = name;
 				this.age = age
 			}
+
 ##JavaScript原型(prototype)对象
 * 原型是用来跟踪一个类的变化的对象
 举个例子:
