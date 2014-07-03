@@ -19,7 +19,6 @@ html, body {
 }
 
 body {
-	background-color: #E7A25F;
 	opacity: 0.9;
 	font: 13.34px helvetica, arial, clean, sans-serif;
 	font-size: small;
@@ -74,7 +73,6 @@ ul.posts {
 
   ul.posts li {
     line-height: 26px;
-	
   }
 
   ul.posts span {
@@ -202,7 +200,6 @@ ul.posts {
 	background: #2D4E36;
 	padding: .2em .9em;
   }
-
   #post ol,li {
     margin-left: 20px;
   }
