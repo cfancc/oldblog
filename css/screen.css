@@ -208,12 +208,14 @@ ul.posts {
 
   #post code {
 	color:white;
+	font-family: cursive;
 	font-size: medium;
     padding: 3px;
   }
 
     #post pre code {
-      border: none;
+	font-family: monospace;
+    border: none;
     }
 
   /* terminal */
