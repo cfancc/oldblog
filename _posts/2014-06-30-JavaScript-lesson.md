@@ -1,9 +1,78 @@
 ---
 layout: post
-title: JavaScript学习笔记
+title: JavaScript基础学习笔记
 ---
-#JavaScript学习笔记
+#JavaScript基础学习笔记
 ---
+## JavaScript中的传值与传址
+* 赋值语句中  
+JavaScript中对基本类型的传递是传基本值,基本类型包括:`Boolean,String,Number,Undefined and Null`.  
+**注意:**只有字面量(literal)的`Boolean,String,Number,Undefined(实际值:undefined) and Null(实际值:null)`才是,举个例子:  
+
+		var b = new Boolean(false);
+		alert(typeof b);//"object"(不是基本类型)
+		var s = new String("hello");
+		alert(typeof s);//"object"(不是基本类型)
+对于复合类型的传递是传地址值,也就是引用.比如:  
+
+		var a = new Object();
+		a.age = 10;
+		var b = a;
+		b.age = 18;
+		alert(a.age);//"18"这里将a对象的地址传给b,b中修改属性就会导致a的变化
+
+* 函数参数传递中
+JavaScript中参数的传递全部是传基本值(包括复合类型,比如对象),这样在函数内所做的修改是不会对外部造成影响  
+
+		// 修改原始类型的参数值
+		var p = 2; 
+		
+		function f(p){
+		    p = 3;
+		}
+		
+		f(p);
+		p // 2
+		
+		// 修改复合类型的参数值
+		var o = [1,2,3];
+		
+		function f(o){
+		    o = [2,3,4];
+		}
+		
+		f(o);
+		o // [1, 2, 3]
+**注意:**虽然参数本身是传值传递，但是对于复合类型的变量来说，属性值是传址传递（pass by reference），也就是说，属性值是通过地址读取的。所以在函数体内修改复合类型变量的属性值，会影响到函数外部。
+
+		// 修改对象的属性值
+		var o = { p:1 };
+		
+		function f(obj){
+		    obj.p = 2;
+		}
+		
+		f(o);
+		o.p // 2
+		
+		// 修改数组的属性值
+		var a = [1,2,3];
+		
+		function f(a){
+		    a[0]=4;
+		}
+		
+		f(a);
+		a // [4,2,3]
+根据上述复合对象的属性是传址的,可以利用这一点:若想让某个变量传地址,可以把它当成window对象的一个属性,示例如下:  
+
+		var p = 1;
+		function f(prop){
+			window[prop] = 2;
+		}
+		f('p');
+		alert(p);//2
+
 ## JavaScript创建对象的几种方法
 
 * 直接对象初始化器`{}`来创建:  
@@ -53,9 +122,9 @@ title: JavaScript学习笔记
 	JS语言中的继承,是利用原型的方式进行实现了,因为继承关系可以表现为`父-子-孙...`的链接方式,相应的就有了原型链(`prototype chain`)的概念.
 
 		//定义一个Person类
-		function Person(name,carrer){
+		function Person(name){
 		    this.name = name;
-		    this.carrer= carrer;
+		    this.species= 'human';
 		}
 		//定义一个Student类
 		function Student(name){
@@ -65,7 +134,6 @@ title: JavaScript学习笔记
 		//定义一个CollegeStudent类
 		function CollegeStudent(name){
 		    this.name = name;
-		    this.carrer ="student";
 		    this.education = "college";
 		}
 		//Student继承自Person
@@ -76,8 +144,10 @@ title: JavaScript学习笔记
 		var xiaoming = new CollegeStudent("xiaoming");
 		
 		//输出小明的姓名
-		console.log(xiaoming.name);
+		console.log(xiaoming.name);//xiaoming
+		//输出小明的种族
+		console.log(xiaoming.species);//human
 		//输出小明的职业
-		console.log(xiaoming.carrer);
+		console.log(xiaoming.carrer);//student
 		//输出小明的教育程度
-		console.log(xiaoming.education);
+		console.log(xiaoming.education);//college
