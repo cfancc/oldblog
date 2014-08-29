@@ -111,12 +111,14 @@ Javascript中的继承不同于其它语言,想搞清楚它的继承,最主要�
 
 这样,一个新鲜出炉的对象就生成了!
 
-相信在理解了原型,构造函数和`new`运算符等作用后,对于Javascript的理解会更加深刻,本文算是一个学习笔记,在学习的过程中参考了很多资料,非常感谢他们能写出这么好的文章!  
+相信在理解了原型,构造函数和`new`运算符等作用后,对于Javascript的理解会更加深刻,本文算是一个学习笔记,在学习的过程中参考了很多资料,主要是以下的一些文章,感谢他们能写出这么浅显易懂的文章,让我从中受益颇多.  
 
 > **参考资料:**  
 
 >[图灵社区:【翻译】JavaScript原型继承工作原理](http://www.ituring.com.cn/article/56184)  
 
->[围了个脖:揭开Javascript属性constructor/prototype的底层原理](http://blog.csdn.net/hikvision_java_gyh/article/details/8937157 "揭开Javascript属性constructor/prototype的底层原理")		
-> >[阮一峰:Javascript 面向对象编程（一）：封装](http://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_encapsulation.html)  
-> >[阮一峰:Javascript继承机制的设计思想](http://www.ruanyifeng.com/blog/2011/06/designing_ideas_of_inheritance_mechanism_in_javascript.html)
+>[围了个脖:揭开Javascript属性constructor/prototype的底层原理](http://blog.csdn.net/hikvision_java_gyh/article/details/8937157 "揭开Javascript属性constructor/prototype的底层原理")	  
+
+>[阮一峰:Javascript 面向对象编程（一）：封装](http://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_encapsulation.html)  
+
+>[阮一峰:Javascript继承机制的设计思想](http://www.ruanyifeng.com/blog/2011/06/designing_ideas_of_inheritance_mechanism_in_javascript.html)
