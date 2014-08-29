@@ -102,7 +102,7 @@ JavaScript中参数的传递全部是传基本值(包括复合类型,比如对�
 			}
 
 ##JavaScript原型(prototype)对象
-* 原型是用来跟踪一个类的变化的对象
+* 原型是用来跟踪一个类的变化的对象**(待修正)**
 举个例子:
 如果创建了一个`Student`类:
 	
@@ -142,11 +142,13 @@ JavaScript中参数的传递全部是传基本值(包括复合类型,比如对�
 		CollegeStudent.prototype = new Student();
 		//生成一个CollegeStudent对象:xiaoming
 		var xiaoming = new CollegeStudent("xiaoming");
-		
+		var xiaowang = new CollegeStudent("xiaowang");
+		xiaowang.__proto__.species = "not human";
+		console.dir(xiaowang);
 		//输出小明的姓名
 		console.log(xiaoming.name);//xiaoming
 		//输出小明的种族
-		console.log(xiaoming.species);//human
+		console.log(xiaoming.species);//not human
 		//输出小明的职业
 		console.log(xiaoming.carrer);//student
 		//输出小明的教育程度
