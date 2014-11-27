@@ -29,14 +29,14 @@ title: CSS实现纯色箭头
 		background-color:black;/*填充柄为黑色*/
     }
 
-    .arrowhead{
+    .arrowhead{/*画箭头*/
 		margin-left: auto;
 		margin-right: auto;/*这两项auto是自动居中*/
 		width: 0;
-		height: 0;/*将content设为0宽0高*/
-		border-left: 8px solid 	transparent;/*将border左侧隐藏*/
-		border-right: 8px solid transparent;/*将border右侧隐藏*/
-		border-top: 12px solid black;/*将border顶侧填充黑色*/
+		height: 0;/*将content设为0宽0高,可以创造出四个三角形环绕的div*/
+		border-left: 8px solid 	transparent;/*将border左侧(三角形)隐藏*/
+		border-right: 8px solid transparent;/*将border右侧(三角形)隐藏*/
+		border-top: 12px solid black;/*将border顶侧(三角形)填充黑色*/
     }
 
 当然这是通过两个div才实现的,一个div也可以实现,是利用伪元素的方式,可我不大擅长CSS,所以只能有机会再实现了!
