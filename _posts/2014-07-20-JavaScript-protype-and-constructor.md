@@ -116,9 +116,6 @@ Javascript中的继承不同于其它语言,想搞清楚它的继承,最主要�
 >**参考资料:**  
 
 >> [图灵社区:【翻译】JavaScript原型继承工作原理](http://www.ituring.com.cn/article/56184)  
-
->>[围了个脖:揭开Javascript属性constructor/prototype的底层原理](http://blog.csdn.net/hikvision_java_gyh/article/details/8937157 "揭开Javascript属性constructor/prototype的底层原理")	  
-
->>[阮一峰:Javascript 面向对象编程（一）：封装](http://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_encapsulation.html)  
-
->>[阮一峰:Javascript继承机制的设计思想](http://www.ruanyifeng.com/blog/2011/06/designing_ideas_of_inheritance_mechanism_in_javascript.html)
+[围了个脖:揭开Javascript属性constructor/prototype的底层原理](http://blog.csdn.net/hikvision_java_gyh/article/details/8937157 "揭开Javascript属性constructor/prototype的底层原理")	  
+[阮一峰:Javascript 面向对象编程（一）：封装](http://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_encapsulation.html)  
+[阮一峰:Javascript继承机制的设计思想](http://www.ruanyifeng.com/blog/2011/06/designing_ideas_of_inheritance_mechanism_in_javascript.html)
