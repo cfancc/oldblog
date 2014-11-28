@@ -19,7 +19,7 @@ html, body {
 }
 
 body {
-	background-color: rgb(174, 196, 90);
+	background-color: rgb(202, 213, 159);
 	opacity: 0.9;
 	font: 13px helvetica, arial, clean, sans-serif;
 	font-size: small;
@@ -188,6 +188,9 @@ ul.posts {
 /* Posts
 /*
 /*****************************************************************************/
+#post {
+	min-height: 500px;
+}
 #post h1{
     font-size: large;
 }
@@ -205,14 +208,31 @@ ul.posts {
   #post ol,li {
     margin-left: 20px;
   }
-
-  #post code {
+  
+  #post pre code {
 	color:white;
-	font-family: cursive;
+	font-family: -webkit-pictograph;
 	font-size: medium;
     padding: 3px;
   }
-
+  
+  #post p code {
+	color:rgb(40, 148, 70);
+	font-family: -webkit-pictograph;
+	font-size: medium;
+    padding: 3px;
+  }
+	#post blockquote p{
+	position: relative;
+	margin-bottom: 25px;
+	padding: 20px;
+	font-size: 17px;
+	font-weight: 100;
+	line-height: 30px;
+	word-break: break-word;
+	border-left: 4px solid #999999;
+	background-color: #F9FFA4;
+	}
     #post pre code {
 	font-family: monospace;
     border: none;
