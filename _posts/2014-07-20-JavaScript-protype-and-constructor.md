@@ -8,6 +8,8 @@ Javascript中的继承不同于其它语言,想搞清楚它的继承,最主要�
 ##什么是原型
 首先明确一点,JS中除了字面(`literal`)基本类型外,其它都可以看作对象.JS中一个对象的产生,不是凭空出现,自然而然的要依赖于相应的构造函数(`constructor`).构造函数是什么样的呢?比如说:  
 
+
+
 	function Person(name) {
 		this.name = name;
 	}

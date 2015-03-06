@@ -9,6 +9,8 @@ title: JavaScript基础学习笔记
 JavaScript中对基本类型的传递是传基本值,基本类型包括:`Boolean,String,Number,Undefined and Null`.  
 **注意:**只有字面量(literal)的`Boolean,String,Number,Undefined(实际值:undefined) and Null(实际值:null)`才是,举个例子:  
 
+
+
 		var b = new Boolean(false);
 		alert(typeof b);//"object"(不是基本类型)
 		var s = new String("hello");

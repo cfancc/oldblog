@@ -6,6 +6,9 @@ title: CSS实现纯色箭头
 ---
 因为项目需要画一些流程图,流程块很容易实现,只需要对一个div操作一下就好,但是流程箭头却不容易实现,从网上搜寻了一部分资料,用CSS可以完美实现.
 最终效果如下:
+
+
+
 <div>
 <div id="lcshaft" style="margin-left: auto;margin-right: auto;width:2px;height:30px;background-color:black;">
 </div>
