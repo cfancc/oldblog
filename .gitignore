@@ -3,3 +3,4 @@ _site/
 .DS_Store
 *.swp
 /_posts/2014-08-29-Code-complete.md
+/Run jekyll.bat
