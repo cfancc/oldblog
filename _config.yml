@@ -1,5 +1,5 @@
 encoding: utf-8
-markdown: kramdown
+markdown: maruku
 highlighter: rouge
 atom-baseurl: "http://cfanlife.tk"
 paginate: 5
