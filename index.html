@@ -1,16 +1,57 @@
 ---
 layout: default
 ---
-  <div id="home">
-  <h1>最近文章</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-		<span>{{ post.date | date_to_string }}</span> &raquo;
-		<p>{{post.excerpt}}</p>
-		<a href="{{ post.url }}">查看全文...</a>
-	  </li>
-    {% endfor %}
-  </ul>
-  </ul>
+<div class="index">
+<!-- 遍历分页后的文章 -->
+{% for post in paginator.posts %}
+  <a class="title" href="{{ post.url }}">{{ post.title }}</a>
+    <p class="date">{{ post.date | date: "%F"}}</p>
+  <div class="excerpt">
+    {{ post.excerpt }}
+	<p><a href="{{ post.url }}">阅读全文...</a></p>
   </div>
+  <hr/>
+{% endfor %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <span class="previous">
+      {% if paginator.previous_page == 1 %}
+        <a href="/">« 上一页</a>
+      {% else %}
+        <a href="{{ paginator.previous_page_path }}">« 上一页</a>
+      {% endif %}
+    </span>
+  {% else %}
+    <span class="previous disabled">« 上一页</span>
+  {% endif %}
+
+  <span class="pages">
+    <span class="page">
+      {% if paginator.page == 1 %}
+        <span class="current-page">1</span>
+      {% else %}
+        <a href="/">1</a>
+      {% endif %}
+    </span>
+
+    {% for count in (2..paginator.total_pages) %}
+      <span class="page">
+        {% if count == paginator.page %}
+          <span class="current-page">{{ count }}</span>
+        {% else %}
+          <a href="/page{{ count }}">{{ count }}</a>
+        {% endif %}
+      </span>
+    {% endfor %}
+  </span>
+  {% if paginator.next_page %}
+    <span class="next">
+      <a href="{{ paginator.next_page_path }}">下一页 »</a>
+    </span>
+  {% else %}
+    <span class="next disabled">
+      下一页 »
+    </span>
+  {% endif %}
+</div>
+</div>

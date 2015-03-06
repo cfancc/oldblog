@@ -1,9 +1,6 @@
 ---
 layout: post
-title: HTML&CSS学习
----
-
-#HTML&CSS学习笔记(From www.codecademy.com HTML&CSS 基础课程)
+title: HTML&CSS学习笔记
 ---
 ##HTML标签备忘录(注释方式:`<!--comments-->`)
 

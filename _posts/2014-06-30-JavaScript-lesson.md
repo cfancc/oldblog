@@ -2,8 +2,6 @@
 layout: post
 title: JavaScript基础学习笔记
 ---
-#JavaScript基础学习笔记
----
 ## JavaScript中的传值与传址
 * 赋值语句中  
 JavaScript中对基本类型的传递是传基本值,基本类型包括:`Boolean,String,Number,Undefined and Null`.  

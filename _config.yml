@@ -1,6 +1,6 @@
-markdown: rdiscount
-highlighter: pygments
-author: "阳光技术宅"
-name: "Footsteps"
+encoding: utf-8
+markdown: kramdown
+highlighter: rouge
 atom-baseurl: "http://cfanlife.tk"
+paginate: 5
 excerpt_separator: "\n\n\n"

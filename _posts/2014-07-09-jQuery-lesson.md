@@ -1,9 +1,6 @@
 ---
 layout: post
 title: jQuery学习笔记
-tags:javascript jQuery
----
-#jQuery学习笔记
 ---
 * 启动函数  
 	`$(document).ready();`
