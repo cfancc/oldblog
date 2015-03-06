@@ -12,4 +12,5 @@ tags:javascript jQuery
 	* -`.ready();` 这个函数是在`document`对象载入完毕后立刻执行的;
 
 
+
 	当然在它括号里面的东西就是要执行的啦,以分号结尾呢,就是告诉jQuery说:这条命令结束了!

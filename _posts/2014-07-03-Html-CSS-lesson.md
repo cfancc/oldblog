@@ -13,6 +13,8 @@ title: HTML&CSS学习
 * `<input type='' name=''>`  
 HTML中,`<input>`是不需要闭合的,但在XHTML中,是需要闭合的
 
+
+
 * `<a href="url"><img src="url" /></a>`  
 上面的是为图片增加超链接地址的形式,只需在`<img>`标签外加一层`<a>`即可,其它标签增加链接的方式类似
 
