@@ -7,13 +7,12 @@ title: JDK及Tomcat环境变量配置详解
 
 
 ##JDK环境变量配置
-1. **Path（可选配）：**
-
-	还是扒一下官方JDK安装文档吧：
+1. **Path（可选配）：**  
+	还是扒一下官方JDK安装文档吧：  
 	> Set the PATH variable if you want to be able to conveniently run the JDK executables (javac.exe, java.exe, javadoc.exe, etc.) from any directory without having to type the full path of the command. If you don't set the PATH variable, you need to specify the full path to the executable every time you run it, such as:
-	> 		C:"\Program Files\Java\jdk1.6.0_<version>\bin\javac"
-	> 		MyClass.java
-	> 		It's useful to set the PATH permanently so it will persist after rebooting.
+	> 	C:"\Program Files\Java\jdk1.6.0_<version>\bin\javac"
+	> 	MyClass.java
+	> 	It's useful to set the PATH permanently so it will persist after rebooting.
 
 	***配置这项的作用？***
 
@@ -43,7 +42,6 @@ title: JDK及Tomcat环境变量配置详解
 
 	官方文档：[http://docs.oracle.com/javase/6/docs/technotes/tools/windows/classpath.html](http://docs.oracle.com/javase/6/docs/technotes/tools/windows/classpath.html)
 	如果你需要用到CLASSPATH变量，那么记得要将“.”或者“\”(即当前根目录)添加进去，因为自定义的路径会覆盖掉默认的配置。多个路径之间用“;”（英文分号）隔开（试验了，确实如此）。至于网上说的一些要带rt.jar ,dt.jar ,tools.jar文件的路径的说法，rt.jar存在于jre\lib下，tools.jar和dt.jar是存在于jdk安装目录下的lib文件目录下。下面就来一一辟谣。  
-
 	- rt.jar存放着JAVA平台的核心类。
 		通过java -verpose命令可以看到Java平台会自动帮你加载（rt应该是RunTime的缩写，应该是运行环境的意思，充分说明了这个文件的重要性，运行环境开启必然会加载rt.jar文件）  
     
@@ -53,11 +51,14 @@ title: JDK及Tomcat环境变量配置详解
     		[Loaded java.security.AccessControlContext$1 from C:\Program Files (x86)\Java\jd
     		k1.6.0_45\jre\lib\rt.jar]
 
-		**那么CLASSPATH里要不要写*rt.jar*呢？**
-
+		**那么CLASSPATH里要不要写*rt.jar*呢？  
 		答案是：**完全不需要！**  
 
-	- tools.jar包含了一些非核心类，用来供JDK中提供的工具以及实用程序调用。	
+
+
+	- tools.jar包含了一些非核心类，用来供JDK中提供的工具以及实用程序调用。  
+	
+
 		> These include  tools.jar, which contains non-core classes for support of the tools and utilities in the JDK.  
 
 		这里tools.jar的描述还不尽明确，不过用WinRAR打开查看它的文件结构，就可以看到很多JDK Tools and Utilities 需要用到的类都在这里面。  

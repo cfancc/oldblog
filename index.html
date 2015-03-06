@@ -4,13 +4,14 @@ layout: default
 <div class="index">
 <!-- 遍历分页后的文章 -->
 {% for post in paginator.posts %}
+<div class="list">
   <a class="title" href="{{ post.url }}">{{ post.title }}</a>
-    <p class="date">{{ post.date | date: "%F"}}</p>
+    <span class="date">{{ post.date | date: "%F"}}</span>
   <div class="excerpt">
     {{ post.excerpt }}
 	<p><a href="{{ post.url }}">阅读全文...</a></p>
   </div>
-  <hr/>
+</div>
 {% endfor %}
 <div class="pagination">
   {% if paginator.previous_page %}

@@ -14,7 +14,7 @@ title: Java知识点
 
 2. 不同修饰符的作用范围
 ----------
-<table>
+<table border="1px">
 	<thead>
 		<tr>
 			<th>修饰名称</th>
