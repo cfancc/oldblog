@@ -63,9 +63,10 @@ table {
 /*
 /*****************************************************************************/
 #project {
-position: fixed;
+position: absolute;
 left: 15px;
 right: 15px;
+top:10px;
 }
 #blog-name{
 font-family: cursive;
