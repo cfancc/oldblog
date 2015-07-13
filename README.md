@@ -7,5 +7,4 @@
 4. 折腾了这么久，如果不塞点东西太对不起自己了...
 
 # 为什么迁移博客？ #
-放弃折腾，专注码字:
-请戳这里：[http://www.jianshu.com/p/8b1448a00ce5](http://www.jianshu.com/p/8b1448a00ce5)
+简单来说就是“放弃折腾，专注码字”。请戳这里：[http://www.jianshu.com/p/8b1448a00ce5](http://www.jianshu.com/p/8b1448a00ce5)
